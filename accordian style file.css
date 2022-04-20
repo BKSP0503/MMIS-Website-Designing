@@ -1,0 +1,52 @@
+<!--accordian style file-->
+<style>
+#accordion
+{
+	margin: 30px auto;
+	width: 1000px;
+}
+#accordion li
+{
+	list-style: none;
+	width: 100%;
+	margin-bottom: 10px;
+	background: #ffe6e6;
+	padding: 10px;
+	border-radius: 4px;
+}
+#accordion li label
+{
+	text-align: center;
+	background: #e60000;
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-size:18px ;
+	font-weight: 500;
+	cursor: pointer;
+	color: white;
+}
+#accordion li label span
+{
+  transform: rotate(90deg);
+font-size: 15px;
+color: white;
+}
+#accordion label + input[type="radio"]
+{
+	display: none;
+}
+#accordion .content
+{
+	padding: 0 10px;
+	line-height: 26px;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.5s;
+}
+#accordion label + input[type="radio"]:checked + .content
+{
+	max-height: 100%;
+}
+</style>

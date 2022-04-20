@@ -1,0 +1,398 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>Applications of GIS</title>
+<meta name="viewport" content="width=device-width, initialscale=1.0">
+<style>
+  *{
+  margin:0;
+  padding:0;
+  font-family:Times new roman;
+  box-sizing:border-box;
+}
+body
+{
+  background: ghostwhite;
+}
+ul.nav 
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:black;
+}
+ul.nav li 
+{
+  float: left;
+}
+ul.nav li a:link,a:active,a:visited
+{
+  display: block;
+   font-family:Times New Roman;
+  color: white;
+  text-align: center;
+  padding:30px 15px;
+  text-decoration: none;
+}
+ul.nav li a:hover
+{
+  display: block;
+  color: black;
+  font-family:Times New Roman;
+  background-color:red;
+  text-align: center;
+  padding:30px 15px;
+  text-decoration: none;
+}
+.header
+{
+  background-color:black;
+  padding:30px;
+  text-align:center;
+   font-family:Times New Roman;
+  font-size:50px;
+  color:white;
+}
+h1 
+{ 
+background-color:black;
+  padding:30px;
+  text-align:center;
+  font-size:50px;
+  color:white;
+ font-family:Times New Roman;
+}
+h3 
+{ 
+background-color:#ff9999;
+  padding:20px;
+  text-align:center;
+  color:white;
+ font-family:Times New Roman;
+}
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+  color:black;
+}
+li.dropdown 
+{
+  display: inline-block;
+}
+.dropdown-content 
+{
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a 
+{
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover 
+{
+display: block;
+  color: white;
+  font-family:Times New Roman;
+  background-color:red;
+  text-align: center;
+  padding:30px 15px;
+  text-decoration: none;
+}
+.dropdown:hover .dropdown-content
+ {
+  display: block;
+}
+#accordion
+{
+  margin: 30px auto;
+  width: 1000px;
+}
+#accordion li
+{
+  list-style: none;
+  width: 100%;
+  margin-bottom: 10px;
+  background: #99c2ff;
+  padding: 10px;
+  border-radius: 4px;
+}
+#accordion li label
+{
+  text-align: center;
+  background:#0066ff;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size:18px ;
+  font-weight: 500;
+  cursor: pointer;
+  color: white;
+}
+#accordion li label span
+{
+  transform: rotate(90deg);
+font-size: 15px;
+color: white;
+}
+#accordion label + input[type="radio"]
+{
+  display: none;
+}
+#accordion .content
+{
+  padding: 0 10px;
+  line-height: 26px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s;
+}
+#accordion label + input[type="radio"]:checked + .content
+{
+  max-height: 100%;
+}
+</style>
+<body>
+	<h1>Applications of GIS</h1>
+<ul class="nav">
+<li><a href="home.html" target="_self">Home</a></li>
+  <li><a href="http://mmistech.com/aboutus.html" target="_blank">MMISTech</a></li>
+         <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Concepts</a>
+    <div class="dropdown-content">
+      <a href="Remote Sensing and GIS with Acordian.html" target="_self">Remote Sensing and GIS</a>
+      <a href="Applications of GIS with Acordian.html" target="_self">Applications of GIS</a>
+    <a href="MIS and MMIS.html" target="_self">MIS and MMIS</a>
+     <a href="Equations That Define the MIS and MMIS Systems with Acordian.html" target="_self">Equations To Define the MIS and MMIS Systems</a>
+    </div>
+  </li>
+   <li><a href="Strategy with Acordian.html" target="_self">Strategy</a></li>
+    <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">About Us</a>
+    <div class="dropdown-content">
+       <a href="Bio Data 2.0.html" target="_self">Bio-Data</a>
+    </div>
+  </li>
+    <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Brain Engergizer</a>
+    <div class="dropdown-content">
+    <a href="div tryout.html" target="_self">Cogitation</a>
+    <a href="Simple Calculator.html" target="_self">Computation</a>
+    </div>
+    <li><a href="Validation Form.html" target="_self">Contact Us</a></li>
+  </li>
+</ul><br>
+	<ul id="accordion">
+<li>
+<label for="first">GIS in Mapping:<span>&#x3e</span></label>
+<input type="radio" name="accordion" id="first">
+<div class="content">
+	<p>Mapping is a central function of Geographic Information System, which provides a visual interpretation of data. GIS store data in database and then represent it visually in a mapped format. People from different professions use map to communicate. It is not necessary to be a skilled cartographer to create maps. Google map, Bing map, Yahoo map are the best example for web based GIS mapping solution.<br></p>
+</div>
+</li>
+<li>
+<label for="second">Telecom and Network services:<span>&#x3e</span></label>
+<input type="radio" name="accordion" id="second">
+<div class="content">
+	<p>GIS can be a great planning and decision making tool for telecom industries. GDi GISDATA enables wireless telecommunication organizations to incorporate geographic data in to the complex network design, planning, optimization, maintenance and activities. This technology allows telecom to enhance a variety of application like engineering application,   customer relationship management and location based services.<br></p>
+</div>
+</li>
+<li>
+<label for="third">Accident Analysis and Hot Spot Analysis:<span>&#x3e</span></label>
+<input type="radio" name="accordion" id="third">
+<div class="content">
+	<p>GIS can be used as a key tool to minimize accident hazard on roads, the existing road network has to be optimized and also the road safety measures have to be improved. This can be achieved by proper traffic management. By identifying the accident locations, remedial measures can be planned by the district administrations to minimize the accidents in different parts of the world. Rerouting design is also very convenient using GIS.</p><br>
+</div>
+</li>
+<li>
+<label for="fourth">Urban Planning:<span>&#x3e</span></label>
+<input type="radio" name="accordion" id="fourth" >
+<div class="content">
+	<p>GIS technology is used to analyze the urban growth and its direction of expansion, and to find suitable sites for further urban development. In order to identify the sites suitable for the urban growth, certain factors have to consider which is: land should have proper accessibility, land should be more or less flat, land should be vacant or having low usage value presently and it should have good supply of water.</p><br>
+</div>
+</li>
+<li>
+<label for="fifth">Transportation Planning:<span>&#x3e</span></label>
+<input type="radio" name="accordion" id="fifth">
+<div class="content">
+	<p>GIS can be used in managing transportation and logistical problems. If transport department is planning for a new railway or a road route then this can be performed by adding environmental and topographical data into the GIS platform. This will easily output the best route for the transportation based on the criteria like flattest route, least damage to habitats and least disturbance from local people. GIS can also help in monitoring rail systems and road conditions.</p><br>
+</div>
+</li>
+<li>
+<label for="sixth">Energy Use Tracking and Planning:<span>&#x3e</span></label>
+<input type="radio" name="accordion" id="sixth">
+<div class="content">
+	<p>GIS is a valuable tool that helps in the planning organizing and subsequent growth in the energy and utilities industries. The effective management of energy systems is a complex challenge. GIS has enormous potential for planning, design and maintenance of facility. Also it provide improved services and that too cost effectively.</p><br>
+</div>
+</li>
+<li>
+<label for="seventh">Environmental Impact Analysis:<span>&#x3e</span></label>
+<input type="radio" name="accordion" id="seventh">
+<div class="content">
+	<p>EIA is an important policy initiative to conserve natural resources and environment. Many human activities produce potential adverse environmental effects which include the construction and operation of highways, rail roads, pipelines, airports, radioactive waste disposal and more. Environmental impact statements are usually required to contain specific information on the magnitude and characteristics of environmental impact. The EIA can be carried out efficiently by the help of GIS, by integrating various GIS layers, assessment of natural features can be performed.</P><br>
+</div>
+</li>
+<li>
+<label for="eighth">Agricultural Applications:<span>&#x3e</span></label>
+<input type="radio" name="accordion" id="eighth">
+<div class="content">
+	<p>GIS can be used to create more effective and efficient farming techniques. It can also analyze soil data and to determine: what are the best crop to plant?, where they should go? how to maintain nutrition levels to best benefit crop to plant?. It is fully integrated and widely accepted for helping government agencies to manage programs that support farmers and protect the environment. This could increase food production in different parts of the world so the world food crisis could be avoided.</p><br>
+</div>
+</li>
+<li>
+<label for="ninth">Disaster Management and Mitigation:<span>&#x3e</span></label>
+<input type="radio" name="accordion" id="ninth">
+<div class="content">
+	<p>Today a well-developed GIS systems are used to protect the environment. It has become an integrated, well developed and successful tool in disaster management and mitigation. GIS can help with risk management and analysis by displaying which areas are likely to be prone to natural or man-made disasters. When such disasters are identified, preventive measures can be developed.</p><br>
+</div>
+</li>
+<li>
+<label for="tenth">Landslide Hazard Zonation using GIS:<span>&#x3e</span></label>
+<input type="radio" name="accordion" id="tenth">
+<div class="content">
+	<p>Landslide hazard zonation is the process of ranking different parts of an area according to the degrees of actual or potential hazard from landslides. The evaluation of landslide hazard is a complex task. It has become possible to efficiently collect, manipulate and integrate a variety of spatial data such as geological, structural, surface cover and slope characteristics of an area, which can be used for hazard zonation. The entire above said layer can well integrate using GIS and weighted analysis is also helpful to find Landslide prone area. By the help of GIS we can do risk assessment and can reduce the losses of life and property.</p><br>
+</div>
+</li>
+<li>
+<label for="eleventh">Determine land use/land cover changes:<span>&#x3e</span></label>
+<input type="radio" name="accordion" id="eleventh">
+<div class="content">
+	<p>Land cover means the feature that is covering the barren surface .Land use means the area in the surface utilized for particular use. The role of GIS technology in land use and land cover applications is that we can determine land use/land cover changes in the different areas. Also it can detect and estimate the changes in the land use/ land cover pattern within time. It enables to find out sudden changes in land use and land cover either by natural forces or by other activities like deforestation.</p></br>
+</div>
+</li>
+<li>
+<label for="twelth">Navigation (routing and scheduling):<span>&#x3e</span></label>
+<input type="radio" name="accordion" id="twelth">
+<div class="content">
+	<p>Web-based navigation maps encourage safe navigation in waterway. Ferry paths and shipping routes are identified for the better routing. ArcGIS supports safe navigation system and provides accurate topographic and hydrographic data. Recently DNR, s Coastal Resources Division began the task of locating, documenting, and cataloging these no historic wrecks with GIS. This division is providing public information that make citizens awareness of these vessel locations through web map. The web map will be regularly updated to keep the boating public informed of these coastal hazards to minimize risk of collision and injury.</p><br>
+</div>
+</li>
+<li>
+<label for="thirteenth">Flood damage estimation:<span>&#x3e</span></label>
+<input type="radio" name="accordion" id="thirteenth">
+<div class="content">
+	<p>GIS helps to document the need for federal disaster relief funds, when appropriate and can be utilized by insurance agencies to assist in assessing monetary value of property loss. A local government need to map flooding risk areas for evaluate the flood potential level in the surrounding area. The damage can be well estimate and can be shown using digital maps.</p><br>
+</div>
+</li>
+<li>
+<label for="fourteenth">Natural Resources Management:<span>&#x3e</span></label>
+<input type="radio" name="accordion" id="fourteenth">
+<div class="content">
+	<p>By the help of GIS technology the agricultural, water and forest resources can be well maintain and manage. Foresters can easily monitor forest condition. Agricultural land includes managing crop yield, monitoring crop rotation, and more. Water is one of the most essential constituents of the environment. GIS is used to analyze geographic distribution of water resources. They are interrelated, i.e. forest cover reduces the storm water runoff and tree canopy stores approximately 215,000 tons carbon. GIS is also used in afforestation.</p><br>
+</li>
+<li>
+<label for="fifteenth">GIS Solutions in Banking Sector:<span>&#x3e</span></label>
+<input type="radio" name="accordion" id="fifteenth">
+<div class="content">
+	<p>Today rapid development occurs in the banking sector. So it has become more market driven and market responsive. The success of this sector largely depends on the ability of a bank to provide customer and market driven services. GIS plays an important role providing planning, organizing and decision making.</p><br>
+</div>
+</li>
+<li>
+<label for="sixteenth">Soil Mapping:<span>&#x3e</span></label>
+<input type="radio" name="accordion" id="sixteenth">
+<div class="content">
+	<p>Soil mapping provides resource information about an area. It helps in understanding soil suitability for various land use activities. It is essential for preventing environmental deterioration associated with misuse of land. GIS Helps to identify soil types in an area and to delineate soil boundaries. It is used for the identification and classification of soil. Soil map is widely used by the farmers in developed countries to retain soil nutrients and earn maximum yield.</p><br>
+</div>
+</li>
+<li>
+<label for="seventeenth">GIS based Digital Taxation:<span>&#x3e</span></label>
+<input type="radio" name="accordion" id="seventeenth">
+<div class="content">
+	<p>In Local Governments, GIS is used to solve taxation problems. It is used to maximize the government income. For example, for engineering, building permits, city development and other municipal needs, GIS is used. Often the data collected and used by one agency or department can be used by another. Example Orhitec ltd can supply you with a system to manage property tax on a geographic basis that can work interactively with the municipal tax collection department. Using GIS we can develop a digital taxation system.</p><br>
+</div>
+</li>
+<li>
+<label for="eighteenth">Land Information System:<span>&#x3e</span></label>
+<input type="radio" name="accordion" id="eighteenth">
+<div class="content">
+	<p>GIS based land acquisition management system will provide complete information about the land. Land acquisition managements is being used for the past 3 or 4 years only. It would help in assessment, payments for private land with owner details, tracking of land allotments and possessions identification and timely resolution of land acquisition related issues.</p><br>
+</div>
+</li>
+<li>
+<label for="twentieth">Surveying:<span>&#x3e</span></label>
+<input type="radio" name="accordion" id="twentieth">
+<div class="content">
+	<p>Surveying is the measurement of location of objects on the earth’s surfaces. Land survey is measuring the distance and angles between different points on the earth surface. An increasing number of national and governments and regional organizations are using GNSS measurements. GNSS is used for topographic surveys where a centimeter level accuracy is provided. These data can be incorporated in the GIS system. GIS tools can be used to estimate area and also, digital maps can prepared.</p><br>
+</div>
+</li>
+<li>
+<label for="twentyfirst">Wetland Mapping:<span>&#x3e</span></label>
+<input type="radio" name="accordion" id="twentyfirst">
+<div class="content">
+	<p>Wetlands contribute to a healthy environment and retain water during dry periods, thus keeping the water table high and relatively stable. During the flooding they act to reduce flood levels and to trap suspended solids and attached nutrients. GIS provide options for wetland mapping and design projects for wetland conservation quickly with the help of GIS. Integration with Remote Sensing data helps to complete wetland mapping on various scale. We can create a wetland digital data bank with spices information using GIS.</p><br>
+</div>
+</li>
+<li>
+<label for="twentysecond">GIS Applications in Geology:<span>&#x3e</span></label>
+<input type="radio" name="accordion" id="twentysecond">
+<div class="content">
+	<p>Geologists use GIS in a various applications. The GIS is used to study geologic features, analyze soils and strata, assess seismic information, and or create three dimensional (3D) displays of geographic features. GIS can be also used to analyze rock information characteristics and identifying the best dam site location.</p><br>
+</div>
+</li>
+<li>
+<label for="twentythird">Detection of Coal Mine Fires:<span>&#x3e</span></label>
+<input type="radio" name="accordion" id="twentythird">
+<div class="content">
+	<p>GIS technology is applied in the area of safe production of coal mine. Coal mine have developed an information management system, the administrators can monitor the safe production of coal mine and at the same time improve the abilities to make decisions. Fire happens frequently in coal mines. So it can assessed spontaneous combustion risk using GIS tools.(Kun Fang, GIS Network Analysis in Rescue of Coal Mine)</p><br>
+</div>
+</li>
+<li>
+<label for="twentyfourth">Assets Management and Maintenance:<span>&#x3e</span></label>
+<input type="radio" name="accordion" id="twentyfourth">
+<div class="content">
+	<p>GIS helps organizations to gain efficiency even in the face of finite resources and the need to hold down the cost. Knowing the population at risk enables planners to determine where to allocate and locate resources more effectively. Operations and maintenance staff can deploy enterprise and mobile workforce. GIS build mobile applications that provide timely information in the field faster and more accurate work order processing.</p><br>
+</div>
+</li>
+<li>
+<label for="twentyfifth">GIS for Planning and Community Development:<span>&#x3e</span></label>
+<input type="radio" name="accordion" id="twentyfifth">
+<div class="content">
+	<p>GIS helps us to better understand our world so we can meet global challenges. Today GIS technology is advancing rapidly, providing many new capabilities and innovations in planning. By applying known part of science and GIS to solve unknown part, that helps to enhance the quality of life and achieve a better future. Creating and applying GIS tools and knowledge allow us integrating geographic intelligence into how we think and behave.</p><br>
+</div>
+</li>
+<li>
+<label for="twentysixth">Tourism Information System:<span>&#x3e</span></label>
+<input type="radio" name="accordion" id="twentysixth">
+<div class="content">
+	<p>GIS provides a valuable toolbox of techniques and technologies of wide applicability to the achievement of sustainable tourism development. This provide an ideal platform tools required to generate a better understanding, and can serve the needs of tourists. They will get all the information on click, measure distance, find hotels, restaurant and even navigate to their respective links. Information plays a vital role to tourists in planning their travel from one place to another, and success of tourism industry. This can bring many advantages for both tourist and tourism department.</p><br>
+</div>
+</li>
+<li>
+<label for="twentyseventh">Irrigation water management:<span>&#x3e</span></label>
+<input type="radio" name="accordion" id="twentyseventh">
+<div class="content">
+	<p>Water availability for irrigation purposes for any area is vital for crop production in that region. It needs to be properly and efficiently managed for the proper utilization of water. To evaluate the irrigation performance, integrated use of satellite remote sensing and GIS assisted by ground information has been found to be efficient technique in spatial and time domain for identification of major crops and their conditions, and determination of their areal extent and yield. Irrigation requirements of crop were determined by considering the factors such as evapotranspiration, Net Irrigation Requirement, Field irrigation Requirement, Gross Irrigation Requirement, and month total volume of water required, by organizing them in GIS environment. (A. M. Chandra, S. K. Ghosh, Remote Sensing and Geographical Information System)</p><br>
+</div>
+</li>
+<li>
+<label for="twentyeight">Assets Management and Maintenance:<span>&#x3e</span></label>
+<input type="radio" name="accordion" id="twentyeight">
+<div class="content">
+	<p>GIS helps organizations to gain efficiency even in the face of finite resources and the need to hold down the cost. Knowing the population at risk enables planners to determine where to allocate and locate resources more effectively. Operations and maintenance staff can deploy enterprise and mobile workforce. GIS build mobile applications that provide timely information in the field faster and more accurate work order processing.</p><br>
+</div>
+</li>
+<li>
+<label for="twentyninth">Fire equipment response distance analysis:<span>&#x3e</span></label>
+<input type="radio" name="accordion" id="twentyninth">
+<div class="content">
+	<p>GIS can be used to evaluate how far (as measured as via the street network) each portion of the street network is from a firehouse. This can be useful in evaluating the best location for a new firehouse or in determining how well the fire services cover particular areas for insurance ratings.(Himachal Pradesh, Development Report)</p><br>
+</div>
+</li>
+</ul>
+</body>
+</html>
