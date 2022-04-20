@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>BKSP's Simple Calculator</title>
+        <script>
+            function display(value)
+            {
+                document.getElementById("result").value += value;
+            }
+            function ClearScreen()
+            {
+                document.getElementById("result").value = "";
+            }
+            function Calculate()
+            {
+               var p = document.getElementById("result").value;
+               var q = eval(p);
+               document.getElementById("result").value = q;
+            }
+        </script>
+            <style>
+                table, th, td 
+                    {
+                    border-style:hidden;
+                    width:1000px;
+                    }
+                    table.center 
+                    {
+                    margin-left: auto; 
+                    margin-right: auto;
+                    }
+                    *{
+                        margin:0;
+                        padding:0;
+                        font-family:Times new roman;
+                        box-sizing:border-box;
+                    }
+                    body
+                    {
+                    background-color:none;
+                    margin: 0;
+                    }
+                    ul.nav 
+                    {
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                    overflow: hidden;
+                    background-color:black;
+                    }
+                    ul.nav li 
+                    {
+                    float: left;
+                    }
+                    ul.nav li a:link,a:active,a:visited
+                    {
+                    display: block;
+                    font-family:Times New Roman;
+                    color: white;
+                    text-align: center;
+                    padding:30px 15px;
+                    text-decoration: none;
+                    }
+                    ul.nav li a:hover
+                    {
+                    display: block;
+                    color: black;
+                    font-family:Times New Roman;
+                    background-color:red;
+                    text-align: center;
+                    padding:30px 15px;
+                    text-decoration: none;
+                    }
+                    .header
+                    {
+                    background-color:black;
+                    padding:30px;
+                    text-align:center;
+                    font-family:Times New Roman;
+                    font-size:50px;
+                    color:white;
+                    }
+                    li a, .dropbtn {
+                    display: inline-block;
+                    color: white;
+                    text-align: center;
+                    padding: 14px 16px;
+                    text-decoration: none;
+                    }
+
+                    li a:hover, .dropdown:hover .dropbtn {
+                    background-color: red;
+                    color: black;
+                    }
+
+                    li.dropdown {
+                    display: inline-block;
+                    }
+
+                    .dropdown-content {
+                    display: none;
+                    position: absolute;
+                    background-color: black;
+                    min-width: 160px;
+                    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                    z-index: 1;
+                    }
+
+                    .dropdown-content a {
+                    color: white;
+                    padding: 12px 16px;
+                    text-decoration: none;
+                    display: block;
+                    text-align: left;
+                    }
+
+                    .dropdown-content a:hover 
+                    {
+                    display: block;
+                    color: white;
+                    font-family:Times New Roman;
+                    background-color:red;
+                    text-align: center;
+                    padding:30px 15px;
+                    text-decoration: none;}
+
+                    .dropdown:hover .dropdown-content {
+                    display: block;
+                    }
+                    h1 
+                    { 
+                    background-color:black;
+                    padding:30px;
+                    text-align:center;
+                    font-size:50px;
+                    color:white;
+                    font-family:Times New Roman;
+                    }
+                    th 
+                    {
+                    background-color:none;
+                    font-size:20px;
+                    padding:30px;
+                    text-align:left;
+                    color:black;
+                    font-family:Times New Roman;
+                    }
+                    td
+                    {
+                    color:Black;
+                    font-family:Times New Roman;
+                    font-size:20px;
+                    }
+                        .Calculator
+                        {
+                            padding: 10px;
+                            border-radius: 1em;
+                            height: 500px;
+                            width: 500px;
+                            margin: auto;
+                            background-color: black;
+                            box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+                        }
+                        .Display-Box
+                        {
+                            font-family: 'Times New Roman', Times, serif;
+                            text-align: center;
+                            font-size: 20px;
+                            background-color: ghostwhite;
+                            border: solid black 0.5px;
+                            color: black;
+                            border-radius: 5px;
+                            width: 100%;
+                            height: 70%;
+                        }
+                        .Button
+                        {
+                            font-family: 'Times New Roman', Times, serif;
+                            font-size: 20px;
+                            background-color: #4d4d4d;
+                            color: white;
+                            border: solid black;
+                            border-radius: 50%;
+                            width: 100%;
+                            height: 70%;
+                            outline: none;
+                        }
+                        .Button-Function
+                        {
+                            font-family: 'Times New Roman', Times, serif;
+                            font-size: 20px;
+                            background-color: #ff9900;
+                            color: white;
+                            border: solid black;
+                            border-radius: 50%;
+                            width: 100%;
+                            height: 70%;
+                            outline: none;
+                        }
+                        .Button-Main
+                        {
+                            font-family: 'Times New Roman', Times, serif;
+                            font-size: 20px;
+                            color: white;
+                            Background-color:#e61919;
+                            border: solid black;
+                            border-radius: 50%;
+                            width: 100%;
+                            height: 70%;
+                            outline: none; 
+                        }
+                        .Button:active
+                        {
+                            background: #b3b3b3;
+                            -webkit-box-shadow: inset 0px 0px 5px #b3b3b3;
+                            -moz-box-shadow: inset 0px 0px 5px #b3b3b3;
+                            box-shadow: inset 0px 0px 5px #b3b3b3;
+                        }
+                        .Button-Function:active
+                        {
+                            background: #ffe0b3;
+                            -webkit-box-shadow: inset 0px 0px 5px #ffe0b3;
+                            -moz-box-shadow: inset 0px 0px 5px #ffe0b3;
+                            box-shadow: inset 0px 0px 5px #ffe0b3;
+                        }
+                        .Button-Main:active
+                        {
+                            background: #f07575;
+                            -webkit-box-shadow: inset 0px 0px 5px #f07575;
+                            -moz-box-shadow: inset 0px 0px 5px #f07575;
+                            box-shadow: inset 0px 0px 5px #f07575;
+                        }
+            </style>
+    </head>
+    <body>
+        <h1>Simple Calculator</h1>
+<ul class="nav">
+<li><a href="home.html" target="_self">Home</a></li>
+	<li><a href="http://mmistech.com/aboutus.html" target="_blank">MMISTech</a></li>
+         <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Concepts</a>
+    <div class="dropdown-content">
+      <a href="Remote Sensing and GIS with Acordian.html" target="_self">Remote Sensing and GIS</a>
+     <a href="Applications of GIS with Acordian.html" target="_self">Applications of GIS</a>
+	  <a href="MIS and MMIS.html" target="_self">MIS and MMIS</a>
+	  <a href="Equations That Define the MIS and MMIS Systems with Acordian.html" target="_self">Equations To Define the MIS and MMIS Systems</a>
+    </div>
+  </li>
+   <li><a href="Strategy with Acordian.html" target="_self">Strategy</a></li>
+    <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">About Us</a>
+    <div class="dropdown-content">
+       <a href="Bio Data 2.0.html" target="_self">Bio-Data</a>
+    </div>
+  </li>
+		<li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Brain Engergizer</a>
+    <div class="dropdown-content">
+		<a href="div tryout.html" target="_self">Cogitation</a>
+    <a href="Simple Calculator.html" target="_self">Computation</a>
+		</div>
+        <li><a href="Validation Form.html" target="_self">Contact Us</a></li>
+  </li>
+</ul><br><br>
+        <table class="Calculator">
+            <tr>
+                <td colspan="4"><input class="Display-Box" type="text" id="result" disabled></td>
+            </tr>
+            <tr>
+                <td> <input class = "Button-Main" type = "button" value = "AC" onclick = "ClearScreen()"> </td>
+                <td> <input class = "Button-Function" type = "button" value = "**" onclick = "display('**')"> </td>
+                <td> <input class = "Button-Function" type = "button" value = "%" onclick = "display('%')"> </td>
+                <td> <input class = "Button-Function" type = "button" value = "/" onclick = "display('/')"> </td>
+            </tr>
+            <tr>
+                <td> <input class = "Button" type = "button" value = "7" onclick = "display('7')"> </td>
+                <td> <input class = "Button" type = "button" value = "8" onclick = "display('8')"> </td>
+                <td> <input class = "Button" type = "button" value = "9" onclick = "display('9')"> </td>
+                <td> <input class = "Button-Function" type = "button" value = "*" onclick = "display('*')"> </td>
+            </tr>
+            <tr>
+                <td> <input class = "Button" type = "button" value = "4" onclick = "display('4')"> </td>
+                <td> <input class = "Button" type = "button" value = "5" onclick = "display('5')"> </td>
+                <td> <input class = "Button" type = "button" value = "6" onclick = "display('6')"> </td>
+                <td> <input class = "Button-Function" type = "button" value = "-" onclick = "display('-')"> </td>
+            </tr>
+            <tr>
+                <td> <input class = "Button" type = "button" value = "1" onclick = "display('1')"> </td>
+                <td> <input class = "Button" type = "button" value = "2" onclick = "display('2')"> </td>
+                <td> <input class = "Button" type = "button" value = "3" onclick = "display('3')"> </td>
+                <td> <input class = "Button-Function" type = "button" value = "+" onclick = "display('+')"> </td>
+            </tr>
+            <tr>
+                <td> <input class = "Button" type = "button" value = "." onclick = "display('.')"> </td>
+                <td> <input class = "Button" type = "button" value = "0" onclick = "display('0')"> </td>
+                <td> <input class = "Button" type = "button" value = "_" onclick = "display(' ')"> </td>
+                <td> <input class = "Button-Main" type = "button" value = "=" onclick = "Calculate()"> </td>
+            </tr>
+        </table>
+    </body>
+</html>
