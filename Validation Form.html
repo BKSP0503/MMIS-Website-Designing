@@ -309,7 +309,7 @@ display: block;
                                 <textarea rows="5" placeholder="Enter your message"id="contact-message" onkeyup="ValidateMessage()"></textarea>
                                 <span id="Message-Error"></span>
                             </div>
-                        <button onclick="(e) = e.preventDefault(); ValidateForm()">Submit</button>
+                        <button onclick="return ValidateForm()">Submit</button>
                         <span id="Submit-Error"></span>
                     </form>
                 </div>
