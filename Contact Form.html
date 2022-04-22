@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA_Compatable" content="IE=edge">
@@ -7,85 +8,89 @@
         <title>Contact Form</title>
         <script src="https://kit.fontawesome.com/2ee75befa2.js" crossorigin="anonymous"></script>
         <style>
-            *{
+            * {
                 margin: 0;
                 font-family: 'Times New Roman', Times, serif;
-                box-sizing: border-box; 
+                box-sizing: border-box;
             }
-            .background
-            {
+
+            .background {
                 width: 100%;
                 height: 100vh;
-                background-image: linear-gradient(rgba(0,0,0,0.7), #3551b5), url(4029814.jpg);
+                background-image: linear-gradient(rgba(0, 0, 0, 0.7), #3551b5), url(4029814.jpg);
                 background-position: center;
                 background-size: cover;
                 display: flex;
                 align-items: center;
                 justify-content: center;
             }
-        form
-        {
-            width: 90%;
-            max-width: 600px;
-        }
-        .input-group
-        {
-            margin-bottom: 30px;
-            position: relative;
-        }
-        input, textarea
-        {
-            width: 100%;
-            padding: 10px;
-            outline: 0;
-            border: 1px solid #fff;
-            color: #fff;
-            background: transparent;
-            font-size: 15px;
-        }
-        label
-        {
-            height: 100%;
-            position: absolute;
-            left: 0;
-            top: 0;
-            padding: 10px;
-            color: #fff;
-            cursor: text;
-            transition: 0.2s;
-        }
-        button
-        {
-            padding: 10px 0;
-            color: #fff;
-            outline: none;
-            background: transparent;
-            border: 1px solid #fff;
-            width: 100%;
-            cursor: pointer;
-        }
-        input:focus~label, input:valid~label
-        {
-            top: -35px;
-            font-size: 14px;
-        }
-        textarea:focus~label,  textarea:valid~label
-        {
-            top: -35px;
-            font-size: 14px;
-        }
-        .row
-        {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        .row .input-group
-        {
-            flex-basis: 48%;
-        }
+
+            form {
+                width: 90%;
+                max-width: 600px;
+            }
+
+            .input-group {
+                margin-bottom: 30px;
+                position: relative;
+            }
+
+            input,
+            textarea {
+                width: 100%;
+                padding: 10px;
+                outline: 0;
+                border: 1px solid #fff;
+                color: #fff;
+                background: transparent;
+                font-size: 15px;
+            }
+
+            label {
+                height: 100%;
+                position: absolute;
+                left: 0;
+                top: 0;
+                padding: 10px;
+                color: #fff;
+                cursor: text;
+                transition: 0.2s;
+            }
+
+            button {
+                padding: 10px 0;
+                color: #fff;
+                outline: none;
+                background: transparent;
+                border: 1px solid #fff;
+                width: 100%;
+                cursor: pointer;
+            }
+
+            input:focus~label,
+            input:valid~label {
+                top: -35px;
+                font-size: 14px;
+            }
+
+            textarea:focus~label,
+            textarea:valid~label {
+                top: -35px;
+                font-size: 14px;
+            }
+
+            .row {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .row .input-group {
+                flex-basis: 48%;
+            }
         </style>
     </head>
+
     <body>
         <div class="background">
             <form>
@@ -104,12 +109,13 @@
                     <label for="email"><i class="fa-solid fa-at"></i> Your E-Mail Id</label>
                 </div>
                 <div class="input-group">
-                <textarea id="message" rows="8" required></textarea>
-                <label for="message"><i class="fa-solid fa-message"></i> Your Message</label>
-                 </div>
+                    <textarea id="message" rows="8" required></textarea>
+                    <label for="message"><i class="fa-solid fa-message"></i> Your Message</label>
+                </div>
                 <button type="submit">SUBMIT<i class="fa-solid fa-paper-plane"></i></button>
-        </form>
+            </form>
         </div>
 
     </body>
+
 </html>

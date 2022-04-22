@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
+
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Validation Form</title>
-        <link rel="icon" type="image/x-icon" href="favicon.ico"> 
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
         <script src="https://kit.fontawesome.com/2ee75befa2.js" crossorigin="anonymous"></script>
         <style>
             * {
@@ -12,194 +13,201 @@
                 font-family: 'Times New Roman', Times, serif;
                 box-sizing: border-box;
             }
-ul.nav 
-{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color:black;
-}
-ul.nav li 
-{
-  float: left;
-}
-ul.nav li a:link,a:active,a:visited
-{
-  display: block;
-   font-family:Times New Roman;
-  color: white;
-  text-align: center;
-  padding:30px 15px;
-  text-decoration: none;
-}
-ul.nav li a:hover
-{
-  display: block;
-  color: black;
-  font-family:Times New Roman;
-  background-color:red;
-  text-align: center;
-  padding:30px 15px;
-  text-decoration: none;
-}
-.header
-{
-  background-color:black;
-  padding:30px;
-  text-align:center;
-   font-family:Times New Roman;
-  font-size:50px;
-  color:white;
-}
-li a, .dropbtn {
-  display: inline-block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
 
-li a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
-  color:black;
-}
+            ul.nav {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: black;
+            }
 
-li.dropdown {
-  display: inline-block;
-}
+            ul.nav li {
+                float: left;
+            }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: black;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
+            ul.nav li a:link,
+            a:active,
+            a:visited {
+                display: block;
+                font-family: Times New Roman;
+                color: white;
+                text-align: center;
+                padding: 30px 15px;
+                text-decoration: none;
+            }
 
-.dropdown-content a {
-  color: white;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
+            ul.nav li a:hover {
+                display: block;
+                color: black;
+                font-family: Times New Roman;
+                background-color: red;
+                text-align: center;
+                padding: 30px 15px;
+                text-decoration: none;
+            }
 
-.dropdown-content a:hover 
-{
-display: block;
-  color: white;
-  font-family:Times New Roman;
-  background-color:red;
-  text-align: center;
-  padding:30px 15px;
-  text-decoration: none;}
+            .header {
+                background-color: black;
+                padding: 30px;
+                text-align: center;
+                font-family: Times New Roman;
+                font-size: 50px;
+                color: white;
+            }
 
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-            .topinfo
-            {
+            li a,
+            .dropbtn {
+                display: inline-block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            li a:hover,
+            .dropdown:hover .dropbtn {
+                background-color: red;
+                color: black;
+            }
+
+            li.dropdown {
+                display: inline-block;
+            }
+
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: black;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                z-index: 1;
+            }
+
+            .dropdown-content a {
+                color: white;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+            }
+
+            .dropdown-content a:hover {
+                display: block;
+                color: white;
+                font-family: Times New Roman;
+                background-color: red;
+                text-align: center;
+                padding: 30px 15px;
+                text-decoration: none;
+            }
+
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+
+            .topinfo {
                 text-align: center;
                 color: #141a34;
                 font-size: 20px;
                 font-family: 'Times New Roman', Times, serif;
-                background:  ghostwhite;
+                background: ghostwhite;
             }
-            .ourinfo 
-            {
+
+            .ourinfo {
                 font-size: 16px;
                 text-align: center;
                 align-items: center;
                 padding: 30px;
-                font-family: 'Times New Roman', Times, serif; 
+                font-family: 'Times New Roman', Times, serif;
                 color: #141a34;
-                background: ghostwhite; 
+                background: ghostwhite;
             }
-            .ourinfo:hover
-            {
+
+            .ourinfo:hover {
                 color: ghostwhite;
-                background: #141a34; 
+                background: #141a34;
             }
-            .yoo
-            {
+
+            .yoo {
                 display: flex;
                 position: relative;
                 justify-content: center;
                 background: ghostwhite;
             }
-            .Background
-            {
+
+            .Background {
                 width: 100%;
                 height: 100vh;
-                background: ghostwhite;;
+                background: ghostwhite;
+                ;
                 display: flex;
                 align-items: center;
                 justify-content: center;
             }
-            .fa-paper-plane
-            {
+
+            .fa-paper-plane {
                 position: absolute;
                 top: 0;
                 left: 50%;
-                transform: translate(-50%,-50%);
+                transform: translate(-50%, -50%);
                 background: #141a34;
                 color: ghostwhite;
                 font-size: 26px;
                 padding: 20px;
                 border-radius: 50%;
-                box-shadow: 0 0 10px rgba(0,0,0,0.5);
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
             }
-            .Background form
-            {
+
+            .Background form {
                 width: 100%;
                 max-width: 900px;
                 padding: 50px 30px 20px;
                 background: ghostwhite;
                 border-radius: 4px;
-                box-shadow: 0 4px 30px rgba(0,0,0,0.7);
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.7);
                 position: relative;
             }
-            .input-group
-            {
+
+            .input-group {
                 width: 90%;
                 display: flex;
                 align-items: center;
                 margin: 10px 0;
                 position: relative;
             }
-            .input-group label
-            {
+
+            .input-group label {
                 flex-basis: 40%;
             }
-            .input-group input, .input-group textarea
-            {
+
+            .input-group input,
+            .input-group textarea {
                 flex-basis: 68%;
                 background: transparent;
                 border: 0;
                 outline: 0px;
-                padding: 10px 0; 
+                padding: 10px 0;
                 border-bottom: 1px solid #141a34;
                 color: #333;
                 font-size: 16px;
             }
-            .row
-            {
+
+            .row {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
             }
-            .row .input-group
-            {
+
+            .row .input-group {
                 flex-basis: 48%;
             }
-            ::placeholder
-            {
+
+            ::placeholder {
                 font-size: 14px;
             }
-            form button
-            {
+
+            form button {
                 background: #141a34;
                 color: ghostwhite;
                 border-radius: 4px;
@@ -210,192 +218,191 @@ display: block;
                 display: block;
                 margin: 30px auto 10px;
             }
-            .input-group span
-            {
+
+            .input-group span {
                 position: absolute;
                 bottom: 12px;
                 right: 17px;
                 font-size: 14px;
                 color: red;
             }
-            #Submit-Error
-            {
+
+            #Submit-Error {
                 color: red;
             }
-           .input-group span i
-           {
-               color: seagreen;
-           } 
+
+            .input-group span i {
+                color: seagreen;
+            }
         </style>
     </head>
+
     <body>
         <h1 class="header">Get In Touch!</h1>
-<ul class="nav">
-<li><a href="home.html" target="_self">Home</a></li>
-	<li><a href="http://mmistech.com/aboutus.html" target="_blank">MMISTech</a></li>
-         <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Concepts</a>
-    <div class="dropdown-content">
-       <a href="Remote Sensing and GIS with Acordian.html" target="_self">Remote Sensing and GIS</a>
-      <a href="Applications of GIS with Acordian.html" target="_self">Applications of GIS</a>
-	  <a href="MIS and MMIS.html" target="_self">MIS and MMIS</a>
-	  <a href="Equations That Define the MIS and MMIS Systems with Acordian.html" target="_self">Equations To Define the MIS and MMIS Systems</a>
-    </div>
-  </li>
-   <li><a href="Strategy with Acordian.html" target="_self">Strategy</a></li>
-    <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">About Us</a>
-    <div class="dropdown-content">
-       <a href="Bio Data 2.0.html" target="_self">Bio-Data</a>
-    </div>
-  </li>
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Brain Engergizer</a>
-    <div class="dropdown-content">
-		<a href="div tryout.html" target="_self">Cogitation</a>
-    <a href="Simple Calculator.html" target="_self">Computation</a>
-		</div>
-        <li><a href="Validation Form.html" target="_self">Contact Us</a></li>
-  </li>
-</ul>
-                <div class="topinfo"><br>
-                <p>Contact us for a quote, aid or to join the team....</p>
-                <br>
-                    <br>
+        <ul class="nav">
+            <li><a href="home.html" target="_self">Home</a></li>
+            <li><a href="http://mmistech.com/aboutus.html" target="_blank">MMISTech</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Concepts</a>
+                <div class="dropdown-content">
+                    <a href="Remote Sensing and GIS with Acordian.html" target="_self">Remote Sensing and GIS</a>
+                    <a href="Applications of GIS with Acordian.html" target="_self">Applications of GIS</a>
+                    <a href="MIS and MMIS.html" target="_self">MIS and MMIS</a>
+                    <a href="Equations That Define the MIS and MMIS Systems with Acordian.html" target="_self">Equations
+                        To Define the MIS and MMIS Systems</a>
                 </div>
-                <div class="yoo">
-                    
-                    <div class="ourinfo">
-
-                        <label><i class="fa-solid fa-location-dot"></i><br><br>159, Prashasan Nagar,<br> Jublee Hills, Hyderabad,<br> Telangana, India</label>
-                    </div>
-                    <div class="ourinfo">
-                        <label><i class="fa-solid fa-phone"></i><br><br>+91-97090728148</label>
-                    </div>
-                    <div class="ourinfo">
-                        <label><i class="fa-solid fa-envelope"></i><br><br>teammmis2022@gmail.com</label>
-                    </div>
-                    </div>
-                    <div class="Background">
-                        <form>
-                            <div class="row">
-                            <i class="fa-solid fa-paper-plane"></i>
-                            <div class="input-group">
-                                <label><i class="fa-solid fa-user"></i> First Name</label>
-                            <input type="text" placeholder="Enter your Name" id="contact-name" onkeyup="ValidateName()">
-                            <span id="Name-Error"></span>
-                            </div>
-                            <div class="input-group">
-                                <label><i class="fa-solid fa-user"></i> Last Name</label>
-                            <input type="text" placeholder="Enter your Name">
-                            </div>
-                            </div>
-                            <div class="input-group">
-                                <label><i class="fa-solid fa-mobile"></i> Phone No.</label>
-                                <input type="tel" placeholder="Enter your Phone Number" id="contact-number" onkeyup="ValidateNumber()">
-                                <span id="Number-Error"></span>
-                            </div>
-                            <div class="input-group">
-                            <label></i><i class="fa-solid fa-at"></i> Email Id</label>
-                                <input type="email" placeholder="Enter your Email" id="contact-email" onkeyup="ValidateEmail()">
-                                <span id="Email-Error"></span>
-                            </div>   
-                            <div class="input-group">
-                                <label><i class="fa-solid fa-house"></i> Your Address</label>
-                                <textarea rows="3" placeholder="Enter your Address"></textarea>
-                            </div>
-                            <div class="input-group">
-                                <label><i class="fa-solid fa-message"></i> Your Message</label>
-                                <textarea rows="5" placeholder="Enter your message"id="contact-message" onkeyup="ValidateMessage()"></textarea>
-                                <span id="Message-Error"></span>
-                            </div>
-                        <button onclick="return ValidateForm()">Submit</button>
-                        <span id="Submit-Error"></span>
-                    </form>
+            </li>
+            <li><a href="Strategy with Acordian.html" target="_self">Strategy</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">About Us</a>
+                <div class="dropdown-content">
+                    <a href="Bio Data 2.0.html" target="_self">Bio-Data</a>
                 </div>
-                <script>
-                    var NameError = document.getElementById('Name-Error');
-                    var NumberError = document.getElementById('Number-Error');
-                    var EmailError = document.getElementById('Email-Error');
-                    var MessageError = document.getElementById('Message-Error');
-                    var SubmitError = document.getElementById('Submit-Error');
+            </li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Brain Engergizer</a>
+                <div class="dropdown-content">
+                    <a href="div tryout.html" target="_self">Cogitation</a>
+                    <a href="Simple Calculator.html" target="_self">Computation</a>
+                    <a href="Loan Calculator/index.html" target="_self">Loan Computation</a>
+                </div>
+            <li><a href="Validation Form.html" target="_self">Contact Us</a></li>
+            </li>
+        </ul>
+        <div class="topinfo"><br>
+            <p>Contact us for a quote, aid or to join the team....</p>
+            <br>
+            <br>
+        </div>
+        <div class="yoo">
 
-                    function ValidateName()
-                    {
-                        var name = document.getElementById('contact-name').value;
-                        if(name.length == 0)
-                        {
-                            NameError.innerHTML = 'Name is requird';
-                            return false;
-                        }
-                        if(!name.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/))
-                        {
-                            NameError.innerHTML = 'Write a proper Name';
-                            return false;
-                        }
-                        NameError.innerHTML = '<i class="fa-solid fa-circle-check"></i>';
-                        return true;
-                    }
-                    function ValidateNumber()
-                    {
-                        var number = document.getElementById('contact-number').value;
-                        if(number.length == 0)
-                        {
-                            NumberError.innerHTML = 'Phone Number is required';
-                            return false;
-                        }
-                        if(number.length !== 10)
-                        {
-                            NumberError.innerHTML = 'Write a proper Number';
-                            return false;
-                        }
-                        if(!number.match(/^[0-9]{10}$/))
-                        {
-                            NumberError.innerHTML = 'Write only Numbers';
-                            return false;
-                        }
-                        NumberError.innerHTML = '<i class="fa-solid fa-circle-check"></i>';
-                        return true;
-                    }
-                    function ValidateEmail()
-                    {
-                        var email = document.getElementById('contact-email').value;
-                        if(email.length == 0)
-                        {
-                            EmailError.innerHTML = 'Email Id is required';
-                            return false;
-                        }
-                        if(!email.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/))
-                        {
-                            EmailError.innerHTML = 'Email Id is invalid';
-                            return false;
-                        }
-                                EmailError.innerHTML = '<i class="fa-solid fa-circle-check"></i>';
-                        return true;
-                    }
-                    function ValidateMessage()
-                    {
-                        var message = document.getElementById('contact-message').value;
-                        var requird = 30;
-                        var left = requird - message.length;
-                        if(left > 0)
-                        {
-                            MessageError.innerHTML = left + ' more charecters required';
-                            return false
-                        }
-                        MessageError.innerHTML = '<i class="fa-solid fa-circle-check"></i>';
-                        return true;
-                    }
-                    function ValidateForm()
-                    {
-                        if(!ValidateName() || !ValidateNumber() || !ValidateEmail() || !ValidateMessage()) 
-                    {
-                        SubmitError.style.display = 'block';
-                        SubmitError.innerHTML = 'Please provide proper input in the the madatory fileds to submit ';
-                        setTimeout(function() {SubmitError.style.display = 'none';}, 3000);
-                        return false;
-                    }   
-                    }
+            <div class="ourinfo">
+
+                <label><i class="fa-solid fa-location-dot"></i><br><br>159, Prashasan Nagar,<br> Jublee Hills,
+                    Hyderabad,<br> Telangana, India</label>
+            </div>
+            <div class="ourinfo">
+                <label><i class="fa-solid fa-phone"></i><br><br>+91-97090728148</label>
+            </div>
+            <div class="ourinfo">
+                <label><i class="fa-solid fa-envelope"></i><br><br>teammmis2022@gmail.com</label>
+            </div>
+        </div>
+        <div class="Background">
+            <form>
+                <div class="row">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    <div class="input-group">
+                        <label><i class="fa-solid fa-user"></i> First Name</label>
+                        <input type="text" placeholder="Enter your Name" id="contact-name" onkeyup="ValidateName()">
+                        <span id="Name-Error"></span>
+                    </div>
+                    <div class="input-group">
+                        <label><i class="fa-solid fa-user"></i> Last Name</label>
+                        <input type="text" placeholder="Enter your Name">
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label><i class="fa-solid fa-mobile"></i> Phone No.</label>
+                    <input type="tel" placeholder="Enter your Phone Number" id="contact-number"
+                        onkeyup="ValidateNumber()">
+                    <span id="Number-Error"></span>
+                </div>
+                <div class="input-group">
+                    <label></i><i class="fa-solid fa-at"></i> Email Id</label>
+                    <input type="email" placeholder="Enter your Email" id="contact-email" onkeyup="ValidateEmail()">
+                    <span id="Email-Error"></span>
+                </div>
+                <div class="input-group">
+                    <label><i class="fa-solid fa-house"></i> Your Address</label>
+                    <textarea rows="3" placeholder="Enter your Address"></textarea>
+                </div>
+                <div class="input-group">
+                    <label><i class="fa-solid fa-message"></i> Your Message</label>
+                    <textarea rows="5" placeholder="Enter your message" id="contact-message"
+                        onkeyup="ValidateMessage()"></textarea>
+                    <span id="Message-Error"></span>
+                </div>
+                <button onclick="return ValidateForm()">Submit</button>
+                <span id="Submit-Error"></span>
+            </form>
+        </div>
+        <script>
+            var NameError = document.getElementById('Name-Error');
+            var NumberError = document.getElementById('Number-Error');
+            var EmailError = document.getElementById('Email-Error');
+            var MessageError = document.getElementById('Message-Error');
+            var SubmitError = document.getElementById('Submit-Error');
+
+            function ValidateName() {
+                var name = document.getElementById('contact-name').value;
+                if (name.length == 0) {
+                    NameError.innerHTML = 'Name is requird';
+                    return false;
+                }
+                if (!name.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)) {
+                    NameError.innerHTML = 'Write a proper Name';
+                    return false;
+                }
+                NameError.innerHTML = '<i class="fa-solid fa-circle-check"></i>';
+                return true;
+            }
+
+            function ValidateNumber() {
+                var number = document.getElementById('contact-number').value;
+                if (number.length == 0) {
+                    NumberError.innerHTML = 'Phone Number is required';
+                    return false;
+                }
+                if (number.length !== 10) {
+                    NumberError.innerHTML = 'Write a proper Number';
+                    return false;
+                }
+                if (!number.match(/^[0-9]{10}$/)) {
+                    NumberError.innerHTML = 'Write only Numbers';
+                    return false;
+                }
+                NumberError.innerHTML = '<i class="fa-solid fa-circle-check"></i>';
+                return true;
+            }
+
+            function ValidateEmail() {
+                var email = document.getElementById('contact-email').value;
+                if (email.length == 0) {
+                    EmailError.innerHTML = 'Email Id is required';
+                    return false;
+                }
+                if (!email.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
+                    EmailError.innerHTML = 'Email Id is invalid';
+                    return false;
+                }
+                EmailError.innerHTML = '<i class="fa-solid fa-circle-check"></i>';
+                return true;
+            }
+
+            function ValidateMessage() {
+                var message = document.getElementById('contact-message').value;
+                var requird = 30;
+                var left = requird - message.length;
+                if (left > 0) {
+                    MessageError.innerHTML = left + ' more charecters required';
+                    return false
+                }
+                MessageError.innerHTML = '<i class="fa-solid fa-circle-check"></i>';
+                return true;
+            }
+
+            function ValidateForm() {
+                if (!ValidateName() || !ValidateNumber() || !ValidateEmail() || !ValidateMessage()) {
+                    SubmitError.style.display = 'block';
+                    SubmitError.innerHTML = 'Please provide proper input in the the madatory fileds to submit ';
+                    setTimeout(function () {
+                        SubmitError.style.display = 'none';
+                    }, 3000);
+                    return false;
+                }
+            }
         </script>
     </body>
-    </html>
+
+</html>

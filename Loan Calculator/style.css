@@ -1,0 +1,193 @@
+body {
+  background: ghostwhite;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Times new roman;
+  box-sizing: border-box;
+}
+ul.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+ul.nav li {
+  float: left;
+}
+ul.nav li a:link,
+a:active,
+a:visited {
+  display: block;
+  font-family: Times New Roman;
+  color: white;
+  text-align: center;
+  padding: 30px 15px;
+  text-decoration: none;
+}
+ul.nav li a:hover {
+  display: block;
+  color: black;
+  font-family: Times New Roman;
+  background-color: red;
+  text-align: center;
+  padding: 30px 15px;
+  text-decoration: none;
+}
+.header {
+  background-color: black;
+  padding: 30px;
+  text-align: center;
+  font-family: Times New Roman;
+  font-size: 50px;
+  color: white;
+}
+h1 {
+  background-color: black;
+  padding: 30px;
+  text-align: center;
+  font-size: 50px;
+  color: white;
+  font-family: Times New Roman;
+}
+
+li a,
+.dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover,
+.dropdown:hover .dropbtn {
+  background-color: red;
+  color: black;
+}
+li.dropdown {
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  display: block;
+  color: white;
+  font-family: Times New Roman;
+  background-color: red;
+  text-align: center;
+  padding: 30px 15px;
+  text-decoration: none;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.loan-calculator {
+  font-family: 'Times New Roman', Times, serif;
+  width: 600px;
+  margin: 24px auto;
+  background: ghostwhite;
+  box-shadow: 0 12px 50px -11px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  color: black;
+  overflow: hidden;
+}
+.loan-calculator,
+.loan-calculator * {
+  box-sizing: border-box;
+}
+.loan-calculator .top {
+  background: #141a34;
+  color: ghostwhite;
+  padding: 32px;
+}
+.loan-calculator .top h2 {
+  margin-top: 0;
+  text-align: center;
+}
+.loan-calculator form {
+  display: flex;
+  gap: 8px;
+  justify-content: space-between;
+}
+.loan-calculator .title {
+  margin-bottom: 16px;
+}
+.loan-calculator form input {
+  font-size: 20px;
+  padding: 8px 24px;
+  width: 100%;
+}
+.loan-calculator .result {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.loan-calculator .result .left {
+  width: 100%;
+  padding: 8px 32px;
+}
+.loan-calculator .left h3 {
+  background-color: #e63946;
+  padding: 20px;
+  color: ghostwhite;
+  font-size: 16px;
+  font-weight: 100;
+  margin-bottom: 8px;
+}
+.loan-calculator .result .value {
+  font-size: 30px;
+  font-weight: 900;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(20, 33, 61, 0.2);
+}
+.loan-calculator .result .value::before {
+  content: 'Rs.';
+  font-size: 24px;
+  font-weight: 400;
+  margin-right: 6px;
+  opacity: 0.4;
+}
+.loan-calculator .calculate {
+  background: #e63946;
+  color: ghostwhite;
+  border: none;
+  padding: 8px 32px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 900;
+  cursor: pointer;
+  margin: 24px 0;
+}
+.loan-calculator .right {
+  width: 50%;
+}
+@media (max-width: 650px) {
+  .loan-calculator {
+    width: 90%;
+    max-width: 500px;
+  }
+  .loan-calculator form {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .loan-calculator .result {
+    flex-direction: column;
+    text-align: center;
+  }
+}

@@ -1,268 +1,313 @@
 <!DOCTYPE>
 <html>
-<head>
-<title>Strategy</title>
-<meta name="viewport" content="width=device-width, initialscale=1.0">
-<style>
-*{
-  margin:0;
-  padding:0;
-  font-family:Times new roman;
-  box-sizing:border-box;
-}
-body
-{
-  background: ghostwhite;
-}
-ul.nav 
-{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color:black;
-}
-ul.nav li 
-{
-  float: left;
-}
-ul.nav li a:link,a:active,a:visited
-{
-  display: block;
-   font-family:Times New Roman;
-  color: white;
-  text-align: center;
-  padding:30px 15px;
-  text-decoration: none;
-}
-ul.nav li a:hover
-{
-  display: block;
-  color: black;
-  font-family:Times New Roman;
-  background-color:red;
-  text-align: center;
-  padding:30px 15px;
-  text-decoration: none;
-}
-.header
-{
-  background-color:black;
-  padding:30px;
-  text-align:center;
-   font-family:Times New Roman;
-  font-size:50px;
-  color:white;
-}
-h1 
-{ 
-background-color:black;
-  padding:30px;
-  text-align:center;
-  font-size:50px;
-  color:white;
- font-family:Times New Roman;
-}
-h2 
-{ 
-background-color: ghostwhite;
-  padding:20px;
-  text-align:center;
-  color: #269900;
- font-family:Times New Roman;
-}
-li a, .dropbtn {
-  display: inline-block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-li a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
-  color:black;
-}
-li.dropdown 
-{
-  display: inline-block;
-}
-.dropdown-content 
-{
-  display: none;
-  position: absolute;
-  background-color: black;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-.dropdown-content a 
-{
-  color: white;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-.dropdown-content a:hover 
-{
-display: block;
-  color: white;
-  font-family:Times New Roman;
-  background-color:red;
-  text-align: center;
-  padding:30px 15px;
-  text-decoration: none;
-}
-.dropdown:hover .dropdown-content
- {
-  display: block;
-}
-#accordion
-{
-	margin: 30px auto;
-	width: 1000px;
-}
-#accordion li
-{
-	list-style: none;
-	width: 100%;
-	margin-bottom: 10px;
-	background: #b3ff99;
-	padding: 10px;
-	border-radius: 4px;
-}
-#accordion li label
-{
-	text-align: center;
-	background: #33cc00;
-	padding: 20px;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	font-size:18px ;
-	font-weight: 500;
-	cursor: pointer;
-	color: white;
-}
-#accordion li label span
-{
-  transform: rotate(90deg);
-font-size: 15px;
-color: white;
-}
-#accordion label + input[type="radio"]
-{
-	display: none;
-}
-#accordion .content
-{
-	padding: 0 10px;
-	line-height: 26px;
-	max-height: 0;
-	overflow: hidden;
-	transition: max-height 0.5s;
-}
-#accordion label + input[type="radio"]:checked + .content
-{
-	max-height: 100%;
-}
-.center
-{
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-</style>
-</head>
-<body>
-  <h1>Strategy</h1>
-<ul class="nav">
-<li><a href="home.html" target="_self">Home</a></li>
-  <li><a href="http://mmistech.com/aboutus.html" target="_blank">MMISTech</a></li>
-         <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Concepts</a>
-    <div class="dropdown-content">
-      <a href="Remote Sensing and GIS with Acordian.html" target="_self">Remote Sensing and GIS</a>
-      <a href="Applications of GIS with Acordian.html" target="_self">Applications of GIS</a>
-    <a href="MIS and MMIS.html" target="_self">MIS and MMIS</a>
-     <a href="Equations That Define the MIS and MMIS Systems with Acordian.html" target="_self">Equations To Define the MIS and MMIS Systems</a>
-    </div>
-  </li>
-  <li><a href="Strategy with Acordian.html" target="_self">Strategy</a></li>
-    <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">About Us</a>
-    <div class="dropdown-content">
-       <a href="Bio Data 2.0.html" target="_self">Bio-Data</a>
-    </div>
-  </li>
-    <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Brain Engergizer</a>
-    <div class="dropdown-content">
-    <a href="div tryout.html" target="_self">Cogitation</a>
-    <a href="Simple Calculator.html" target="_self">Computation</a>
-    </div>
-    <li><a href="Validation Form.html" target="_self">Contact Us</a></li>
-  </li>
-</ul><br>
 
-<h2>Taking the tactical slot for Strategy – A new slot of strategic soft solutions in the domain of IT – MMIS Technologies</h2>
-<ul id="accordion">
-<li>
-<label for="first">Background:<span>&#x3e</span></label>
-<input type="radio" name="accordion" id="first">
-<div class="content">
-  <p>Information Technologies have played pivotal role in building up an apt and appropriate solutions for function specific needs pertaining to Finance, marketing, and supply chain, HR etc. thru various branded and legacy ERP systems from time to time, for effective time and cost optimizations.</p><br>
-<p>Strategically and functionally when reviewed and viewed all the functional departments functions in the form of MIS will forge its resources and energies towards functional goals which would ultimately get culminated into the directed vision and mission of the organization that are in turn gauged and managed thru various MIS repots generated by IT technologies from time to time, and in most cases, these Informationtechnologies adopt Bottom up Top approach to compute and generate activities oriented MIS pertaining to prime activities of client organizations such as Dispatches, Sales, stocks and collections.</p><br>
-<p>From these Prime activities illustrated above, utility functions are computed with respect to time and space. Such as, B/R. profitability, contribution, best dealer etc for effective strategic moves from time to time. Today in competitive economy MIS for strategy is only to the extent of 35 – 40% and the rest is from the external environment such as CI, market place etc which will be examined in isolation. This as back ground MMIS Technologies have identified the gaps and have invented new fused mechanisms to compute the discussed requirements for strategy in common frame work which is new tactical space for strategy thus a new space of opportunities in the IT domain.</p><br>
-</div>
-</li>
-<li>
-<label for="second">MMIS Technologies:<span>&#x3e</span></label>
-<input type="radio" name="accordion" id="second">
-<div class="content">
-  <p>Fuses and uses the existing IT technologies and setups – Spatial (map based) non-spatial (text based) – Map related such as – ASP Map, ESRI products, and also from open source products Using ASP.Net, C#, Oracle DBA, SDE, Oracle – can integrate with core SAP modules without connectors.</p><br>
-</div>
-</li>
-<li>
-<label for="third">MMIS Objectives:<span>&#x3e</span></label>
-<input type="radio" name="accordion" id="third">
-<div class="content">
-  <p>Driving the technologies for strategic needs in greener mode which are cost, time and product optimum useful to top management which enables you to publish your own need and contextual information for quicker and effective decision making and are supported thru our following customized tools which are user friendly and adopts Self knowledge publishing Mechanisms (SKPM) which we term as Spatial Interactive ERP and is Indian Patented. – Interactive ERP is first of its kind:</p><br>
-  <p><strong>Usages:</strong></p><br>
-<p>1. <i>GGB</i> – Goal Going Boards – sets pre planed function specific activities in conjunction to time and space<br>
-2. <i>PAB</i> – Prime Activity Board – Surfaces on virtual operations on line customized to various functions by extracting the info from core modules of ERP systems (SAP, Microsoft Navision w/o connectors).<br>
-3. <i>POI</i> – Point of Interest – Organization specific virtual operations with respect to space and time with conjunction to LIS (Land Information systems – from secondary sources)<br>
-4. <i>VKB</i> – Virtual Knowledge Board – Exclusively designed form Top strategic groups such as COO, CEO, CFO, CMO etc.<br>
-5. <i>CTO</i> – Cost and Time optimizations tools – The above discussed tools pave towards CTO objectives indirectly, thru our buffer tools analytical decisions can be optimized amongst available alternatives which could be tangible and direct cost saving measures.</p><br>
-</div>
-</li>
-<li>
-<label for="fourth">MMIS tech value for strategists:<span>&#x3e</span></label>
-<input type="radio" name="accordion" id="fourth">
-<div class="content">
-  <p><strong>MMIS tech value for functional strategists:</strong></p><br>
-  <p>1. Link project & organizational objectives to stakeholder needs.<br>
-2. consistently focus on customer needs and manage stakeholders.<br>
-3. Build and manage high performance project teams.<br>
-4. Improved resource effort time by minimizing rework at levels<br>
-5. Integrate project scope with product scope to create vision related<br>
-6. Estimate project costs and schedules up to +/- 5% accuracy<br>
-7. Integrate & control time, resources & deliverables.</p><br>
- <p><strong>MMIS tech value for corporate strategists:</strong></p><br>
- <p>As all functional department functions aim at aligning to the vision of the organization we stream the MIS generated by functional departments into a very meaningful format in conjunction to external world of information systems (LIS) . This particular exercise would ensure entire gamut of MIS for decisions, are made available in a user friendly manner.</p><br>
-<p><strong>Benefits:</strong></p><br>
-<p>1. Cost and time optimizations.<br>
-2. Will picture virtual status of organizational operations at any point of time of any theme of interest for review in colored symbolic format.<br>
-3. Will picture the position of the operations in vision of the organization.<br></p>
-</div>
-</li>
-<li>
-<label for="fifth">Conclusions:<span>&#x3e</span></label>
-<input type="radio" name="accordion" id="fifth">
-<div class="content">
-  <p>MMIS technologies are the outcome of carrier journey of the mentor which have sought support from Industry to academia and are implemented at Mega Fertilizer company in India. This will help the organization in following ways.<br></p>
-</div>
-</li>
-</ul>
-</body>
+  <head>
+    <title>Strategy</title>
+    <meta name="viewport" content="width=device-width, initialscale=1.0">
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: Times new roman;
+        box-sizing: border-box;
+      }
+
+      body {
+        background: ghostwhite;
+      }
+
+      ul.nav {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: black;
+      }
+
+      ul.nav li {
+        float: left;
+      }
+
+      ul.nav li a:link,
+      a:active,
+      a:visited {
+        display: block;
+        font-family: Times New Roman;
+        color: white;
+        text-align: center;
+        padding: 30px 15px;
+        text-decoration: none;
+      }
+
+      ul.nav li a:hover {
+        display: block;
+        color: black;
+        font-family: Times New Roman;
+        background-color: red;
+        text-align: center;
+        padding: 30px 15px;
+        text-decoration: none;
+      }
+
+      .header {
+        background-color: black;
+        padding: 30px;
+        text-align: center;
+        font-family: Times New Roman;
+        font-size: 50px;
+        color: white;
+      }
+
+      h1 {
+        background-color: black;
+        padding: 30px;
+        text-align: center;
+        font-size: 50px;
+        color: white;
+        font-family: Times New Roman;
+      }
+
+      h2 {
+        background-color: ghostwhite;
+        padding: 20px;
+        text-align: center;
+        color: #269900;
+        font-family: Times New Roman;
+      }
+
+      li a,
+      .dropbtn {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      li a:hover,
+      .dropdown:hover .dropbtn {
+        background-color: red;
+        color: black;
+      }
+
+      li.dropdown {
+        display: inline-block;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: black;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+
+      .dropdown-content a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+
+      .dropdown-content a:hover {
+        display: block;
+        color: white;
+        font-family: Times New Roman;
+        background-color: red;
+        text-align: center;
+        padding: 30px 15px;
+        text-decoration: none;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      #accordion {
+        margin: 30px auto;
+        width: 1000px;
+      }
+
+      #accordion li {
+        list-style: none;
+        width: 100%;
+        margin-bottom: 10px;
+        background: #b3ff99;
+        padding: 10px;
+        border-radius: 4px;
+      }
+
+      #accordion li label {
+        text-align: center;
+        background: #33cc00;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 18px;
+        font-weight: 500;
+        cursor: pointer;
+        color: white;
+      }
+
+      #accordion li label span {
+        transform: rotate(90deg);
+        font-size: 15px;
+        color: white;
+      }
+
+      #accordion label+input[type="radio"] {
+        display: none;
+      }
+
+      #accordion .content {
+        padding: 0 10px;
+        line-height: 26px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s;
+      }
+
+      #accordion label+input[type="radio"]:checked+.content {
+        max-height: 100%;
+      }
+
+      .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Strategy</h1>
+    <ul class="nav">
+      <li><a href="home.html" target="_self">Home</a></li>
+      <li><a href="http://mmistech.com/aboutus.html" target="_blank">MMISTech</a></li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Concepts</a>
+        <div class="dropdown-content">
+          <a href="Remote Sensing and GIS with Acordian.html" target="_self">Remote Sensing and GIS</a>
+          <a href="Applications of GIS with Acordian.html" target="_self">Applications of GIS</a>
+          <a href="MIS and MMIS.html" target="_self">MIS and MMIS</a>
+          <a href="Equations That Define the MIS and MMIS Systems with Acordian.html" target="_self">Equations To Define
+            the MIS and MMIS Systems</a>
+        </div>
+      </li>
+      <li><a href="Strategy with Acordian.html" target="_self">Strategy</a></li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">About Us</a>
+        <div class="dropdown-content">
+          <a href="Bio Data 2.0.html" target="_self">Bio-Data</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Brain Engergizer</a>
+        <div class="dropdown-content">
+          <a href="div tryout.html" target="_self">Cogitation</a>
+          <a href="Simple Calculator.html" target="_self">Computation</a>
+          <a href="Loan Calculator/index.html" target="_self">Loan Computation</a>
+        </div>
+      <li><a href="Validation Form.html" target="_self">Contact Us</a></li>
+      </li>
+    </ul><br>
+
+    <h2>Taking the tactical slot for Strategy – A new slot of strategic soft solutions in the domain of IT – MMIS
+      Technologies</h2>
+    <ul id="accordion">
+      <li>
+        <label for="first">Background:<span>&#x3e</span></label>
+        <input type="radio" name="accordion" id="first">
+        <div class="content">
+          <p>Information Technologies have played pivotal role in building up an apt and appropriate solutions for
+            function specific needs pertaining to Finance, marketing, and supply chain, HR etc. thru various branded and
+            legacy ERP systems from time to time, for effective time and cost optimizations.</p><br>
+          <p>Strategically and functionally when reviewed and viewed all the functional departments functions in the
+            form of MIS will forge its resources and energies towards functional goals which would ultimately get
+            culminated into the directed vision and mission of the organization that are in turn gauged and managed thru
+            various MIS repots generated by IT technologies from time to time, and in most cases, these
+            Informationtechnologies adopt Bottom up Top approach to compute and generate activities oriented MIS
+            pertaining to prime activities of client organizations such as Dispatches, Sales, stocks and collections.
+          </p><br>
+          <p>From these Prime activities illustrated above, utility functions are computed with respect to time and
+            space. Such as, B/R. profitability, contribution, best dealer etc for effective strategic moves from time to
+            time. Today in competitive economy MIS for strategy is only to the extent of 35 – 40% and the rest is from
+            the external environment such as CI, market place etc which will be examined in isolation. This as back
+            ground MMIS Technologies have identified the gaps and have invented new fused mechanisms to compute the
+            discussed requirements for strategy in common frame work which is new tactical space for strategy thus a new
+            space of opportunities in the IT domain.</p><br>
+        </div>
+      </li>
+      <li>
+        <label for="second">MMIS Technologies:<span>&#x3e</span></label>
+        <input type="radio" name="accordion" id="second">
+        <div class="content">
+          <p>Fuses and uses the existing IT technologies and setups – Spatial (map based) non-spatial (text based) – Map
+            related such as – ASP Map, ESRI products, and also from open source products Using ASP.Net, C#, Oracle DBA,
+            SDE, Oracle – can integrate with core SAP modules without connectors.</p><br>
+        </div>
+      </li>
+      <li>
+        <label for="third">MMIS Objectives:<span>&#x3e</span></label>
+        <input type="radio" name="accordion" id="third">
+        <div class="content">
+          <p>Driving the technologies for strategic needs in greener mode which are cost, time and product optimum
+            useful to top management which enables you to publish your own need and contextual information for quicker
+            and effective decision making and are supported thru our following customized tools which are user friendly
+            and adopts Self knowledge publishing Mechanisms (SKPM) which we term as Spatial Interactive ERP and is
+            Indian Patented. – Interactive ERP is first of its kind:</p><br>
+          <p><strong>Usages:</strong></p><br>
+          <p>1. <i>GGB</i> – Goal Going Boards – sets pre planed function specific activities in conjunction to time and
+            space<br>
+            2. <i>PAB</i> – Prime Activity Board – Surfaces on virtual operations on line customized to various
+            functions by extracting the info from core modules of ERP systems (SAP, Microsoft Navision w/o
+            connectors).<br>
+            3. <i>POI</i> – Point of Interest – Organization specific virtual operations with respect to space and time
+            with conjunction to LIS (Land Information systems – from secondary sources)<br>
+            4. <i>VKB</i> – Virtual Knowledge Board – Exclusively designed form Top strategic groups such as COO, CEO,
+            CFO, CMO etc.<br>
+            5. <i>CTO</i> – Cost and Time optimizations tools – The above discussed tools pave towards CTO objectives
+            indirectly, thru our buffer tools analytical decisions can be optimized amongst available alternatives which
+            could be tangible and direct cost saving measures.</p><br>
+        </div>
+      </li>
+      <li>
+        <label for="fourth">MMIS tech value for strategists:<span>&#x3e</span></label>
+        <input type="radio" name="accordion" id="fourth">
+        <div class="content">
+          <p><strong>MMIS tech value for functional strategists:</strong></p><br>
+          <p>1. Link project & organizational objectives to stakeholder needs.<br>
+            2. consistently focus on customer needs and manage stakeholders.<br>
+            3. Build and manage high performance project teams.<br>
+            4. Improved resource effort time by minimizing rework at levels<br>
+            5. Integrate project scope with product scope to create vision related<br>
+            6. Estimate project costs and schedules up to +/- 5% accuracy<br>
+            7. Integrate & control time, resources & deliverables.</p><br>
+          <p><strong>MMIS tech value for corporate strategists:</strong></p><br>
+          <p>As all functional department functions aim at aligning to the vision of the organization we stream the MIS
+            generated by functional departments into a very meaningful format in conjunction to external world of
+            information systems (LIS) . This particular exercise would ensure entire gamut of MIS for decisions, are
+            made available in a user friendly manner.</p><br>
+          <p><strong>Benefits:</strong></p><br>
+          <p>1. Cost and time optimizations.<br>
+            2. Will picture virtual status of organizational operations at any point of time of any theme of interest
+            for review in colored symbolic format.<br>
+            3. Will picture the position of the operations in vision of the organization.<br></p>
+        </div>
+      </li>
+      <li>
+        <label for="fifth">Conclusions:<span>&#x3e</span></label>
+        <input type="radio" name="accordion" id="fifth">
+        <div class="content">
+          <p>MMIS technologies are the outcome of carrier journey of the mentor which have sought support from Industry
+            to academia and are implemented at Mega Fertilizer company in India. This will help the organization in
+            following ways.<br></p>
+        </div>
+      </li>
+    </ul>
+  </body>
+
 </html>
