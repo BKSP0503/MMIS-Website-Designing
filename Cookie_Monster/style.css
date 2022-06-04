@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    background: url(images/cookie-monster.jpg);
+    background-position: center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#container {
+    background: black;
+    width: 500px;
+    padding: 12px;
+    border-radius: 6px;
+}
+
+#container h1 {
+    font-size: 80px;
+    color: ghostwhite;
+}
+
+#container h2 {
+    background-color: #75c1f6;
+    font-size: 30px;
+    color: black;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+#container p {
+    color: ghostwhite;
+    text-align: left;
+}
+
+#container a {
+    color: #75c1f6;
+    text-decoration: none;
+}
+
+#container a:hover {
+    color: ghostwhite;
+    text-decoration: none;
+}
