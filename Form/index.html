@@ -36,7 +36,8 @@
                 </div>
                 <div class="input-group">
                     <label><i class="fa-brands fa-leanpub"></i> COURSE</label>
-                    <select id="course" name="course" size="9" multiple>
+                    <select id="course" size="10" onkeyup="ValidateCourse()" multiple="multiple">
+                        <option value="">-- PLEASE SELECT --</option>
                         <option value="HTML">HTML</option>
                         <option value="CSS">CSS</option>
                         <option value="JavaScript">JavaScript</option>
@@ -47,17 +48,20 @@
                         <option value="Django">Django</option>
                         <option value="Rest API">Rest API</option>
                     </select>
+                    <span id="Course-Error"></span>
                 </div>
                 <div class="radio">
                     <label><i class="fa-solid fa-person-half-dress"></i> GENDER</label><br>
-                    <input type="radio" id="male" name="gender" value="Male">
+                    <input type="radio" id="male" name="gender" value="Male" onkeyup="ValidateRadio()">
                     <label for="Male">Male</label>
-                    <input type="radio" id="female" name="gender" value="female">
+                    <input type="radio" id="female" name="gender" value="female" onkeyup="ValidateRadio()">
                     <label for="Female">Female</label>
-                    <input type="radio" id="other" name="gender" value="Other">
+                    <input type="radio" id="other" name="gender" value="Other" onkeyup="ValidateRadio()">
                     <label for="Other">Other</label>
-                    <input type="radio" id="no" name="gender" value="Not Intrested to Mention">
+                    <input type="radio" id="no" name="gender" value="Not Intrested to Mention"
+                        onkeyup="ValidateRadio()">
                     <label for="Not Intrested to Mention">Not Intrested to Mention</label>
+                    <span id="Gender-Error"></span>
                 </div>
                 <div class="input-group">
                     <label><i class="fa-solid fa-mobile"></i> PHONE NUMBER</label>
@@ -79,11 +83,15 @@
                 </div>
                 <div class="input-group">
                     <label><i class="fa-solid fa-unlock"></i> PASSWORD</label>
-                    <input type="password" placeholder="Please Enter Your Password" id="contact-password">
+                    <input type="password" placeholder="Please Enter Your Password" id="contact-password"
+                        onkeyup="ValidatePassword()">
+                    <span id="Password-Error"></span>
                 </div>
                 <div class="input-group">
                     <label><i class="fa-solid fa-unlock"></i> RE-ENTER PASSWORD</label>
-                    <input type="password" placeholder="Please Enter Your Password" id="contact-repassword">
+                    <input type="password" placeholder="Please Enter Your Password" id="contact-repassword"
+                        onkeyup="ValidateRePassword()">
+                    <span id="RePassword-Error"></span>
                 </div>
                 <button onclick="return ValidateForm()">SUBMIT</button>
                 <span id="Submit-Error"></span>

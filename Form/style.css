@@ -118,8 +118,20 @@ form button {
     color: red;
 }
 
+.radio span {
+    position: absolute;
+    bottom: 12px;
+    right: 17px;
+    font-size: 14px;
+    color: red;
+}
+
 #Submit-Error {
     color: red;
+}
+
+.radio span i {
+    color: seagreen;
 }
 
 .input-group span i {
