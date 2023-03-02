@@ -1,0 +1,127 @@
+* {
+    background-color: ghostwhite;
+    color: #292d2f;
+    font-family: 'Times New Roman';
+    box-sizing: border-box;
+}
+
+.h1 {
+    background-color: #292d2f;
+    padding: 30px;
+    text-align: center;
+    font-size: 50px;
+    color: ghostwhite;
+    font-family: 'Times New Roman';
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.Background {
+    width: 100%;
+    height: 100vh;
+    background: ghostwhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-paper-plane {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #292d2f;
+    color: ghostwhite;
+    font-size: 26px;
+    padding: 20px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.Background form {
+    width: 100%;
+    max-width: 900px;
+    padding: 50px 30px 20px;
+    background: ghostwhite;
+    border-radius: 4px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.7);
+    position: relative;
+}
+
+.input-group {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    position: relative;
+}
+
+.input-group label {
+    flex-basis: 40%;
+}
+
+.input-group input,
+.input-group textarea {
+    flex-basis: 68%;
+    background: transparent;
+    border: 0;
+    outline: 0px;
+    padding: 10px 0;
+    border-bottom: 1px solid #292d2f;
+    color: #333;
+    font-size: 16px;
+}
+
+.radio {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    position: relative;
+}
+
+.radio input {
+    flex-basis: 10%;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.row .input-group {
+    flex-basis: 48%;
+}
+
+::placeholder {
+    font-size: 14px;
+}
+
+form button {
+    background: #292d2f;
+    color: ghostwhite;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    padding: 10px 40px;
+    outline: 0;
+    cursor: pointer;
+    display: block;
+    margin: 30px auto 10px;
+}
+
+.input-group span {
+    position: absolute;
+    bottom: 12px;
+    right: 17px;
+    font-size: 14px;
+    color: red;
+}
+
+#Submit-Error {
+    color: red;
+}
+
+.input-group span i {
+    color: seagreen;
+}
