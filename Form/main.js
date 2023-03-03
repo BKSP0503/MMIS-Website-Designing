@@ -38,7 +38,7 @@ function ValidateCourse() {
     var course = document.getElementById('course');
     if (course.selectedIndex !== -1) {
         CourseError.innerHTML = '<i class="fa-solid fa-circle-check"></i>';
-        return true; // at least one option is selected
+        return true;
     }
     CourseError.innerHTML = 'Please Select Atleast 1 Course'
 }
@@ -53,8 +53,8 @@ function ValidateNumber() {
         NumberError.innerHTML = 'Please Enter a Proper Number';
         return false;
     }
-    if (!number.match(/^[0-9]{10}$/)) {
-        NumberError.innerHTML = 'Enter Only Numbers';
+    if (!number.match(/^[6-9]\d{9}$/)) {
+        NumberError.innerHTML = 'Enter A Valid Phone Number';
         return false;
     }
     NumberError.innerHTML = '<i class="fa-solid fa-circle-check"></i>';
@@ -78,7 +78,7 @@ function ValidateEmail() {
 function ValidateAddress() {
     var address = document.getElementById('contact-address').value;
     // var requird = 0;
-    // var left = requird - message.length;
+    // var left = requird - address.length;
     if (address.length < 0) {
         AddressError.innerHTML = 'Please Enter A Valid Address';
         return false
