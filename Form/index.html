@@ -16,14 +16,14 @@
         <h1 class="h1">SIGN-UP FORM</h1>
         <br><br>
         <div class="Background">
-            <form>
+            <form id="Form">
                 <div class="row">
                     <i class="fa-solid fa-paper-plane"></i>
                     <div class="input-group">
                         <label><i class="fa-solid fa-user"></i> FIRST NAME</label>
-                        <input type="text" placeholder="Please Enter Your First Name" id="contact-name"
-                            onkeyup="ValidateName()">
-                        <span id="Name-Error"></span>
+                        <input type="text" placeholder="Please Enter Your First Name" id="contact-firstname"
+                            onkeyup="ValidateFirstName()">
+                        <span id="FirstName-Error"></span>
                     </div>
                     <!-- <div class="input-group">
                         <label><i class="fa-solid fa-user"></i> MIDDLE NAME</label>
@@ -31,7 +31,9 @@
                     </div> -->
                     <div class="input-group">
                         <label><i class="fa-solid fa-user"></i> LAST NAME</label>
-                        <input type="text" placeholder="Please Enter Your First Name">
+                        <input type="text" placeholder="Please Enter Your First Name" id="contact-lastname"
+                            onkeyup="ValidateLastName()">
+                        <span id="LastName-Error"></span>
                     </div>
                 </div>
                 <div class="input-group">
@@ -52,14 +54,14 @@
                 </div>
                 <div class="radio">
                     <label><i class="fa-solid fa-person-half-dress"></i> GENDER</label><br>
-                    <input type="radio" id="male" name="gender" value="Male" onkeyup="ValidateRadio()">
+                    <input type="radio" id="male" name="gender" value="Male" onkeyup="ValidateGender()">
                     <label for="Male">Male</label>
-                    <input type="radio" id="female" name="gender" value="female" onkeyup="ValidateRadio()">
+                    <input type="radio" id="female" name="gender" value="female" onkeyup="ValidateGender()">
                     <label for="Female">Female</label>
-                    <input type="radio" id="other" name="gender" value="Other" onkeyup="ValidateRadio()">
+                    <input type="radio" id="other" name="gender" value="Other" onkeyup="ValidateGender()">
                     <label for="Other">Other</label>
                     <input type="radio" id="no" name="gender" value="Not Intrested to Mention"
-                        onkeyup="ValidateRadio()">
+                        onkeyup="ValidateGender()">
                     <label for="Not Intrested to Mention">Not Intrested to Mention</label>
                     <span id="Gender-Error"></span>
                 </div>
