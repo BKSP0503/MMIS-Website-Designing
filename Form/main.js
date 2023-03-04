@@ -9,6 +9,7 @@ var PasswordError = document.getElementById('Password-Error');
 var RePasswordError = document.getElementById('RePassword-Error');
 var SubmitError = document.getElementById('Submit-Error');
 
+
 function ValidateFirstName() {
     var fname = document.getElementById('first-name').value;
     if (fname.length == 0) {
@@ -160,30 +161,10 @@ function ValidateForm() {
         }, 3000);
         return false;
     }
-    var firstName = document.getElementById('first-name').value;
-    var lastName = document.getElementById('last-name').value;
-    var gender = document.querySelector('input[name="gender"]:checked');
-    var course = document.getElementById('course').value;
-    var number = document.getElementById('contact-number').value;
-    var email = document.getElementById('contact-email').value;
-    var address = document.getElementById('contact-address').value;
+    const form = document.getElementById('Form');
+    const formData = new FormData(form);
 
-    var formData = {
-        FirstName: firstName,
-        LastName: lastName,
-        Gender: gender,
-        Course: course,
-        Number: number,
-        Email: email,
-        Address: address
-    };
-    console.table(formData);
+    for (let [key, value] of formData.entries()) {
+        console.log(`${key}: ${value}`);
+    }
 }
-
-
-// const form = document.getElementById('Form');
-// const formData = new FormData(form);
-
-// for (let [key, value] of formData.entries()) {
-//     console.log(`${key}: ${value}`);
-// }
