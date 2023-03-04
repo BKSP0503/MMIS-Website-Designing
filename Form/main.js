@@ -10,13 +10,13 @@ var RePasswordError = document.getElementById('RePassword-Error');
 var SubmitError = document.getElementById('Submit-Error');
 
 function ValidateFirstName() {
-    var name = document.getElementById('contact-firstname').value;
-    if (name.length == 0) {
-        FirstNameError.innerHTML = 'Name is requird';
+    var fname = document.getElementById('first-name').value;
+    if (fname.length == 0) {
+        FirstNameError.innerHTML = 'First Name is requird';
         return false;
     }
-    if (!name.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)) {
-        FirstNameError.innerHTML = 'Please Enter a proper Name';
+    if (!fname.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)) {
+        FirstNameError.innerHTML = 'Please Enter a proper First Name';
         return false;
     }
     FirstNameError.innerHTML = '<i class="fa-solid fa-circle-check"></i>';
@@ -24,12 +24,12 @@ function ValidateFirstName() {
 }
 
 function ValidateLastName() {
-    var name = document.getElementById('contact-lastname').value;
-    if (name.length == 0) {
+    var lname = document.getElementById('last-name').value;
+    if (lname.length == 0) {
         LastNameError.innerHTML = 'Name is requird';
         return false;
     }
-    if (!name.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)) {
+    if (!lname.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)) {
         LastNameError.innerHTML = 'Please Enter a proper Name';
         return false;
     }
@@ -43,7 +43,8 @@ function ValidateCourse() {
         CourseError.innerHTML = '<i class="fa-solid fa-circle-check"></i>';
         return true;
     }
-    CourseError.innerHTML = 'Please Select Atleast 1 Course'
+    CourseError.innerHTML = 'Please Select Atleast 1 Course';
+    return false;
 }
 
 function ValidateGender() {
@@ -139,7 +140,8 @@ function ValidateRePassword() {
     var password = document.getElementById('contact-password').value;
     var repassword = document.getElementById('contact-repassword').value;
     if (repassword.length == 0) {
-        RePasswordError.innerHTML = 'Please Re-Enter The Password'
+        RePasswordError.innerHTML = 'Please Re-Enter The Password';
+        return false;
     }
     if (password !== repassword) {
         RePasswordError.innerHTML = 'Passwords Do Not Match';
@@ -150,7 +152,7 @@ function ValidateRePassword() {
 }
 
 function ValidateForm() {
-    if (!ValidateFirstName() || !ValidateLastName() || !ValidateCourse() || !validateG() || !ValidateNumber() || !ValidateEmail() || !ValidateAddress() || !ValidatePassword() || !ValidateRePassword()) {
+    if (!ValidateFirstName() || !ValidateLastName() || !ValidateCourse() || !ValidateGender() || !ValidateNumber() || !ValidateEmail() || !ValidateAddress() || !ValidatePassword() || !ValidateRePassword()) {
         SubmitError.style.display = 'block';
         SubmitError.innerHTML = 'Please Provide Input In The Madatory Fileds To Submit';
         setTimeout(function () {
@@ -158,73 +160,30 @@ function ValidateForm() {
         }, 3000);
         return false;
     }
+    var firstName = document.getElementById('first-name').value;
+    var lastName = document.getElementById('last-name').value;
+    var gender = document.querySelector('input[name="gender"]:checked');
+    var course = document.getElementById('course').value;
+    var number = document.getElementById('contact-number').value;
+    var email = document.getElementById('contact-email').value;
+    var address = document.getElementById('contact-address').value;
+
+    var formData = {
+        FirstName: firstName,
+        LastName: lastName,
+        Gender: gender,
+        Course: course,
+        Number: number,
+        Email: email,
+        Address: address
+    };
+    console.table(formData);
 }
 
-const form = document.getElementById('Form');
-const formData = new FormData(form);
 
-for (let [key, value] of formData.entries()) {
-    console.log(`${key}: ${value}`);
-}
+// const form = document.getElementById('Form');
+// const formData = new FormData(form);
 
-// var Name = ValidateName(FormData.name)
-// var Course = ValidateCourse(FormData.course)
-// var Gender = validateRadio(FormData.gender)
-// var Number = ValidateNumber(FormData.number)
-// var Email = ValidateEmail(FormData.email)
-// var Address = ValidateAddress(FormData.address)
-// var Password = ValidatePassword(FormData.password)
-
-// if (Name && Course && Gender && Number && Email && Address && Password) {
-//     const formDataArray = [{
-//             label: "Name",
-//             value: FormData.name
-//         },
-//         {
-//             label: "Course",
-//             value: FormData.course
-//         },
-//         {
-//             label: "Gender",
-//             value: FormData.gender
-//         },
-//         {
-//             label: "Number",
-//             value: FormData.number
-//         },
-//         {
-//             label: "Email",
-//             value: FormData.email
-//         },
-//         {
-//             label: "Address",
-//             value: FormData.address
-//         },
-//         {
-//             label: "Password",
-//             value: "********"
-//         }
-//     ];
-//     console.table(formDataArray);
-// } else {
-//     console.log("Form data is not valid.");
+// for (let [key, value] of formData.entries()) {
+//     console.log(`${key}: ${value}`);
 // }
-
-// var firstName = document.getElementById('contact-firstname').value;
-// var lastName = document.getElementById('contact-lastname').value;
-// var gender = document.querySelector('input[name="gender"]:checked').value;
-// var course = document.getElementById('course').value;
-// var number = document.getElementById('contact-number').value;
-// var email = document.getElementById('contact-email').value;
-// var address = document.getElementById('contact-address').value;
-
-// var formData = {
-//     "First Name": firstName,
-//     "Last Name": lastName,
-//     "Gender": gender,
-//     "Course": course,
-//     "Number": number,
-//     "Email": email,
-//     "Address": address
-// };
-// console.table(formData);

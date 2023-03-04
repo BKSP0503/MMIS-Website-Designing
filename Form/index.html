@@ -16,12 +16,12 @@
         <h1 class="h1">SIGN-UP FORM</h1>
         <br><br>
         <div class="Background">
-            <form id="Form">
+            <form>
                 <div class="row">
                     <i class="fa-solid fa-paper-plane"></i>
                     <div class="input-group">
                         <label><i class="fa-solid fa-user"></i> FIRST NAME</label>
-                        <input type="text" placeholder="Please Enter Your First Name" id="contact-firstname"
+                        <input type="text" placeholder="Please Enter Your First Name" id="first-name" name="first-name"
                             onkeyup="ValidateFirstName()">
                         <span id="FirstName-Error"></span>
                     </div>
@@ -31,14 +31,14 @@
                     </div> -->
                     <div class="input-group">
                         <label><i class="fa-solid fa-user"></i> LAST NAME</label>
-                        <input type="text" placeholder="Please Enter Your First Name" id="contact-lastname"
+                        <input type="text" placeholder="Please Enter Your First Name" id="last-name" name="last-name"
                             onkeyup="ValidateLastName()">
                         <span id="LastName-Error"></span>
                     </div>
                 </div>
                 <div class="input-group">
                     <label><i class="fa-brands fa-leanpub"></i> COURSE</label>
-                    <select id="course" size="10" onkeyup="ValidateCourse()" multiple="multiple">
+                    <select id="course" size="10" multiple="multiple" onkeyup="ValidateCourse()">
                         <option value="">-- PLEASE SELECT --</option>
                         <option value="HTML">HTML</option>
                         <option value="CSS">CSS</option>
@@ -68,31 +68,31 @@
                 <div class="input-group">
                     <label><i class="fa-solid fa-mobile"></i> PHONE NUMBER</label>
                     <input type="tel" placeholder="Please Enter Your Phone Number" id="contact-number"
-                        onkeyup="ValidateNumber()">
+                        name="contact-number" onkeyup="ValidateNumber()">
                     <span id="Number-Error"></span>
                 </div>
                 <div class="input-group">
                     <label></i><i class="fa-solid fa-at"></i> Email Id</label>
-                    <input type="email" placeholder="Please Enter your Email" id="contact-email"
+                    <input type="email" placeholder="Please Enter your Email" id="contact-email" name="contact-email"
                         onkeyup="ValidateEmail()">
                     <span id="Email-Error"></span>
                 </div>
                 <div class="input-group">
                     <label><i class="fa-solid fa-house"></i> Your Address</label>
                     <textarea rows="3" placeholder="Please Enter your Address" id="contact-address"
-                        onkeyup="ValidateAddress()"></textarea>
+                        name="contact-address" onkeyup="ValidateAddress()"></textarea>
                     <span id="Address-Error"></span>
                 </div>
                 <div class="input-group">
                     <label><i class="fa-solid fa-unlock"></i> PASSWORD</label>
                     <input type="password" placeholder="Please Enter Your Password" id="contact-password"
-                        onkeyup="ValidatePassword()">
+                        name="contact-password" onkeyup="ValidatePassword()">
                     <span id="Password-Error"></span>
                 </div>
                 <div class="input-group">
                     <label><i class="fa-solid fa-unlock"></i> RE-ENTER PASSWORD</label>
                     <input type="password" placeholder="Please Enter Your Password" id="contact-repassword"
-                        onkeyup="ValidateRePassword()">
+                        name="contact-repassword" onkeyup="ValidateRePassword()">
                     <span id="RePassword-Error"></span>
                 </div>
                 <button onclick="return ValidateForm()">SUBMIT</button>
