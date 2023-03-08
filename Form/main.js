@@ -68,10 +68,10 @@ function ValidatePan() {
         PanError.innerHTML = 'PAN Number Is Required';
         return false;
     }
-    if (pan.length !== 10) {
-        PanError.innerHTML = 'Please Enter A Proper PAN Number';
-        return false;
-    }
+    // if (pan.length !== 10) {
+    //     PanError.innerHTML = 'Please Enter A Proper PAN Number';
+    //     return false;
+    // }
     if (!pan.match(/^[A-Z]{5}[0-9]{4}[A-Z]{1}$/)) {
         PanError.innerHTML = 'Please Enter A Valid PAN Number';
         return false;
@@ -173,7 +173,7 @@ function ValidateRePassword() {
 }
 
 function ValidateForm() {
-    if (!ValidateFirstName() || !ValidateLastName() || !ValidateCourse() || !ValidateGender() || !ValidateNumber() || !ValidateEmail() || !ValidateAddress() || !ValidatePassword() || !ValidateRePassword()) {
+    if (!ValidateFirstName() || !ValidateLastName() || !ValidateCourse() || !ValidateGender() || !ValidatePan() || !ValidateNumber() || !ValidateEmail() || !ValidateAddress() || !ValidatePassword() || !ValidateRePassword()) {
         SubmitError.style.display = 'block';
         SubmitError.innerHTML = 'Please Provide Input In The Madatory Fileds To Submit';
         setTimeout(function () {
