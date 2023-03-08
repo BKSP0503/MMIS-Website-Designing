@@ -62,14 +62,32 @@ function ValidateGender() {
     return false;
 }
 
+function ValidatePan() {
+    var pan = document.getElementById('contact-pannumber');
+    if (pan.length == 0) {
+        PanError.innerHTML = 'PAN Number Is Required';
+        return false;
+    }
+    if (pan.length !== 10) {
+        PanError.innerHTML = 'Please Enter A Proper PAN Number';
+        return false;
+    }
+    if (!pan.match(/^[A-Z]{5}[0-9]{4}[A-Z]{1}$/)) {
+        PanError.innerHTML = 'Please Enter A Valid PAN Number';
+        return false;
+    }
+    PanError.innerHTML = '<i class="fa-solid fa-circle-check"></i>';
+    return true;
+}
+
 function ValidateNumber() {
     var number = document.getElementById('contact-number').value;
     if (number.length == 0) {
-        NumberError.innerHTML = 'Phone Number is required';
+        NumberError.innerHTML = 'Phone Number Is required';
         return false;
     }
     if (number.length !== 10) {
-        NumberError.innerHTML = 'Please Enter a Proper Number';
+        NumberError.innerHTML = 'Please Enter A Proper Number';
         return false;
     }
     if (!number.match(/^[6-9]\d{9}$/)) {
