@@ -63,20 +63,38 @@ function ValidateGender() {
 }
 
 function ValidatePan() {
-    var pan = document.getElementById('contact-pannumber');
+    var pan = document.getElementById('pan-number').value;
     if (pan.length == 0) {
         PanError.innerHTML = 'PAN Number Is Required';
         return false;
     }
-    // if (pan.length !== 10) {
-    //     PanError.innerHTML = 'Please Enter A Proper PAN Number';
-    //     return false;
-    // }
+    if (pan.length !== 10) {
+        PanError.innerHTML = 'Please Enter A Proper PAN Number';
+        return false;
+    }
     if (!pan.match(/^[A-Z]{5}[0-9]{4}[A-Z]{1}$/)) {
         PanError.innerHTML = 'Please Enter A Valid PAN Number';
         return false;
     }
     PanError.innerHTML = '<i class="fa-solid fa-circle-check"></i>';
+    return true;
+}
+
+function ValidateGST() {
+    var gst = document.getElementById('contact-gstnumber').value;
+    if (gst.length == 0) {
+        GstError.innerHTML = 'GST Number Is Required';
+        return false;
+    }
+    if (gst.length !== 15) {
+        GstError.innerHTML = 'Please Enter A Proper GST Number';
+        return false;
+    }
+    if (!gst.match(/^(\d{2}[A-Z]{5}\d{4}[A-Z]{1}\d[Z]{1}[A-Z\d]{1})$/)) {
+        GstError.innerHTML = 'Please Enter A Valid GST Number';
+        return false;
+    }
+    GstError.innerHTML = '<i class="fa-solid fa-circle-check"></i>';
     return true;
 }
 
@@ -173,7 +191,7 @@ function ValidateRePassword() {
 }
 
 function ValidateForm() {
-    if (!ValidateFirstName() || !ValidateLastName() || !ValidateCourse() || !ValidateGender() || !ValidatePan() || !ValidateNumber() || !ValidateEmail() || !ValidateAddress() || !ValidatePassword() || !ValidateRePassword()) {
+    if (!ValidateFirstName() || !ValidateLastName() || !ValidateCourse() || !ValidateGender() || !ValidateNumber() || !ValidateEmail() || !ValidateAddress() || !ValidatePassword() || !ValidateRePassword() || !ValidatePan() || !ValidateGST()) {
         SubmitError.style.display = 'block';
         SubmitError.innerHTML = 'Please Provide Input In The Madatory Fileds To Submit';
         setTimeout(function () {
